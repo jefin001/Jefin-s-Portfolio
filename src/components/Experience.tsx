@@ -4,18 +4,24 @@ import { EXPERIENCE } from '../data/portfolioData';
 
 export const Experience: React.FC = () => {
   return (
-    <section id="experience" className="py-24 px-6 md:px-10 max-w-7xl mx-auto border-t border-[#E2E8F0]">
+    <section id="experience" className="py-24 px-6 md:px-10 max-w-7xl mx-auto border-t border-white/10 relative">
+      {/* Background warm light leak */}
+      <div 
+        aria-hidden="true" 
+        className="absolute top-1/3 left-0 w-80 h-80 bg-[#FF6D29]/10 rounded-full blur-[120px] pointer-events-none -z-10" 
+      />
+
       {/* Section Header */}
-      <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-12 border-b border-[#E2E8F0]">
+      <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-12 border-b border-white/10">
         <div>
-          <span className="text-xs font-mono uppercase tracking-widest text-[#047857] font-semibold">
+          <span className="text-xs font-mono uppercase tracking-widest text-[#FF6D29] font-semibold">
             Section 08 / Career History
           </span>
-          <h2 className="text-3xl md:text-5xl font-extrabold text-[#0F172A] tracking-tight mt-2 font-['Manrope']">
+          <h2 className="text-3xl md:text-5xl font-extrabold text-white tracking-tight mt-2 font-['Manrope']">
             Hands-On Experience & Roles
           </h2>
         </div>
-        <p className="text-sm text-[#64748B] max-w-md font-sans">
+        <p className="text-sm text-[#BABABA] max-w-md font-sans">
           Proven background managing paid client budgets, driving admissions funnels, and managing multi-channel content ecosystems.
         </p>
       </div>
@@ -25,7 +31,7 @@ export const Experience: React.FC = () => {
         {/* Central/Left hairline spine */}
         <div 
           aria-hidden="true" 
-          className="absolute top-16 bottom-0 left-4 md:left-8 w-px bg-[#CBD5E1]" 
+          className="absolute top-16 bottom-0 left-4 md:left-8 w-px bg-white/15" 
         />
 
         <div className="space-y-12">
@@ -34,47 +40,47 @@ export const Experience: React.FC = () => {
               {/* Timeline Node */}
               <div 
                 aria-hidden="true" 
-                className="absolute left-2.5 md:left-6.5 top-1.5 w-3.5 h-3.5 rounded-full bg-[#047857] border-4 border-white shadow-xs" 
+                className="absolute left-2.5 md:left-6.5 top-2 w-3.5 h-3.5 rounded-full bg-[#FF6D29] border-4 border-[#161316] shadow-[0_0_12px_#FF6D29]" 
               />
 
               {/* Experience Card */}
-              <div className="rounded-2xl bg-white border border-[#E2E8F0] p-6 md:p-8 space-y-6 shadow-xs hover:shadow-md transition-shadow">
+              <div className="rounded-3xl glass-card glass-card-hover p-6 md:p-8 space-y-6">
                 {/* Header Strip */}
-                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-4 border-b border-[#E2E8F0]">
+                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-4 border-b border-white/10">
                   <div>
-                    <span className="text-xs font-mono text-[#047857] font-bold uppercase tracking-wider">
+                    <span className="text-xs font-mono text-[#FF6D29] font-bold uppercase tracking-wider">
                       {exp.type}
                     </span>
-                    <h3 className="text-xl md:text-2xl font-bold text-[#0F172A] font-['Manrope'] mt-0.5">
+                    <h3 className="text-xl md:text-2xl font-bold text-white font-['Manrope'] mt-0.5">
                       {exp.role}
                     </h3>
-                    <p className="text-sm font-medium text-[#64748B] mt-0.5 flex items-center gap-2">
-                      <span className="text-[#0F172A] font-semibold">{exp.company}</span>
+                    <p className="text-sm font-medium text-[#BABABA] mt-0.5 flex items-center gap-2">
+                      <span className="text-white font-semibold">{exp.company}</span>
                       <span aria-hidden="true">·</span>
                       <span className="flex items-center gap-1">
-                        <MapPin className="w-3.5 h-3.5 text-[#047857]" />
+                        <MapPin className="w-3.5 h-3.5 text-[#FF6D29]" />
                         {exp.location}
                       </span>
                     </p>
                   </div>
-                  <div className="text-xs font-mono text-[#475569] bg-[#F1F5F9] px-3 py-1.5 rounded-lg border border-[#E2E8F0] self-start sm:self-auto font-medium">
+                  <div className="text-xs font-mono text-white/80 glass-pill px-3 py-1.5 rounded-full border border-white/15 self-start sm:self-auto font-medium">
                     {exp.period}
                   </div>
                 </div>
 
-                <p className="text-sm text-[#475569] leading-relaxed">
+                <p className="text-sm text-[#BABABA] leading-relaxed">
                   {exp.description}
                 </p>
 
                 {/* Core Responsibilities */}
                 <div className="space-y-2">
-                  <p className="text-xs font-mono uppercase text-[#64748B] font-semibold tracking-wider">
+                  <p className="text-xs font-mono uppercase text-[#BABABA] font-semibold tracking-wider">
                     Core Execution & Ownership:
                   </p>
-                  <ul className="grid grid-cols-1 md:grid-cols-2 gap-2 text-xs text-[#475569]">
+                  <ul className="grid grid-cols-1 md:grid-cols-2 gap-2 text-xs text-[#BABABA]">
                     {exp.responsibilities.map((resp, rIdx) => (
                       <li key={rIdx} className="flex items-start gap-2">
-                        <span className="text-[#047857] font-bold">·</span>
+                        <span className="text-[#FF6D29] font-bold">·</span>
                         <span className="leading-relaxed">{resp}</span>
                       </li>
                     ))}
@@ -82,10 +88,10 @@ export const Experience: React.FC = () => {
                 </div>
 
                 {/* Key Achievements */}
-                <div className="pt-4 border-t border-[#E2E8F0] flex flex-wrap items-center gap-3 text-xs font-mono">
-                  <span className="text-[#047857] font-bold uppercase">Documented Wins:</span>
+                <div className="pt-4 border-t border-white/10 flex flex-wrap items-center gap-3 text-xs font-mono">
+                  <span className="text-[#FF6D29] font-bold uppercase">Documented Wins:</span>
                   {exp.achievements.map((ach, aIdx) => (
-                    <span key={aIdx} className="text-[#0F172A] font-medium bg-[#F8FAFC] px-3 py-1 rounded-md border border-[#E2E8F0]">
+                    <span key={aIdx} className="text-white font-medium bg-black/40 px-3 py-1 rounded-full border border-white/10">
                       {ach}
                     </span>
                   ))}

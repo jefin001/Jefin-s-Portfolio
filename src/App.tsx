@@ -45,7 +45,17 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#F8FAFC] text-[#0F172A] selection:bg-[#DCFCE7] selection:text-[#166534] font-sans antialiased">
+    <div className="relative min-h-screen bg-[#161316] text-[#FFFFFF] selection:bg-[#FF6D29] selection:text-white font-sans antialiased overflow-x-hidden">
+      {/* Ambient background glowing light leaks matching Image 1 (#FF6D29 and #453027) */}
+      <div 
+        aria-hidden="true" 
+        className="fixed top-0 left-1/3 -translate-x-1/2 w-[700px] h-[700px] bg-gradient-to-b from-[#FF6D29]/15 via-[#453027]/20 to-transparent rounded-full blur-[160px] pointer-events-none -z-10" 
+      />
+      <div 
+        aria-hidden="true" 
+        className="fixed bottom-1/4 right-0 w-[600px] h-[600px] bg-[#FF6D29]/10 rounded-full blur-[180px] pointer-events-none -z-10" 
+      />
+
       {/* Top Bar Contract Navigation */}
       <Navbar onContactClick={scrollToContact} />
 

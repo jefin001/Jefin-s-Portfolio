@@ -1,5 +1,5 @@
 import React from 'react';
-import { Smartphone, MousePointer, Search, Share2, Heart, MessageCircle, ExternalLink, ShieldCheck } from 'lucide-react';
+import { Smartphone, MousePointer, Search, Share2, Heart, MessageCircle, ExternalLink, ShieldCheck, GraduationCap, UtensilsCrossed, Sparkles } from 'lucide-react';
 
 interface CampaignVisualAssetProps {
   caseStudyId: string;
@@ -8,71 +8,71 @@ interface CampaignVisualAssetProps {
 export const CampaignVisualAsset: React.FC<CampaignVisualAssetProps> = ({ caseStudyId }) => {
   if (caseStudyId === 'cs-vidya') {
     return (
-      <div className="rounded-xl overflow-hidden bg-white border border-[#E2E8F0] p-5 space-y-4 shadow-xs">
-        <div className="flex items-center justify-between pb-3 border-b border-[#E2E8F0] text-xs font-mono">
-          <span className="text-[#047857] font-bold">META ADS PREVIEW // INSTAGRAM FEED</span>
-          <span className="text-[#64748B]">SPONSORED DIRECT RESPONSE</span>
+      <div className="rounded-2xl overflow-hidden glass-card p-5 space-y-4 border-white/15">
+        <div className="flex items-center justify-between pb-3 border-b border-white/10 text-xs font-mono">
+          <span className="text-[#FF6D29] font-bold">META ADS // STUDY ABROAD ADMISSIONS</span>
+          <span className="text-[#BABABA]">SPONSORED DIRECT RESPONSE</span>
         </div>
 
         {/* Ad Mockup Header */}
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-2.5">
-            <div className="w-8 h-8 rounded-full bg-[#047857] text-white font-bold text-xs flex items-center justify-center font-['Manrope']">
+            <div className="w-8 h-8 rounded-full bg-gradient-to-br from-[#FF6D29] to-[#D9480F] text-white font-bold text-xs flex items-center justify-center font-['Manrope'] shadow-md">
               VP
             </div>
             <div>
-              <p className="text-xs font-bold text-[#0F172A] leading-tight">Vidya Portal</p>
-              <p className="text-[10px] text-[#64748B]">Sponsored · South India</p>
+              <p className="text-xs font-bold text-white leading-tight">Vidya Portal — Study Abroad</p>
+              <p className="text-[10px] text-[#BABABA]">Sponsored · UK, Canada & Europe Admissions</p>
             </div>
           </div>
-          <span className="text-xs text-[#94A3B8] font-mono">•••</span>
+          <span className="text-xs text-[#BABABA] font-mono">•••</span>
         </div>
 
         {/* Ad Copy */}
-        <p className="text-xs text-[#334155] leading-relaxed">
-          Stuck between a degree and a career? Upgrade your skills with industry-verified certifications in Data, Tech & Finance. 100% placement support with corporate recruitment partners.
+        <p className="text-xs text-white/90 leading-relaxed">
+          Planning to study in the UK, Europe, or Canada for the upcoming intake? Fast-track your application with 100% visa guidance, IELTS waivers & exclusive university scholarship seats.
         </p>
 
-        {/* Ad Creative Canvas (Stylized Ad Artboard) */}
-        <div className="relative aspect-[16/9] rounded-lg overflow-hidden bg-gradient-to-br from-[#ECFDF5] via-[#F0FDF4] to-[#E2E8F0] border border-[#A7F3D0] p-4 flex flex-col justify-between">
+        {/* Ad Creative Canvas (Stylized Glass Ad Artboard) */}
+        <div className="relative aspect-[16/9] rounded-xl overflow-hidden bg-gradient-to-br from-[#453027]/70 via-[#1F191A] to-[#120F12] border border-white/20 p-4 flex flex-col justify-between shadow-[inset_0_1px_2px_rgba(255,255,255,0.3)]">
           <div className="flex justify-between items-start">
-            <span className="text-[10px] font-mono bg-white text-[#047857] px-2 py-0.5 rounded border border-[#A7F3D0] font-bold shadow-2xs">
-              ADMISSIONS 2025-26
+            <span className="text-[10px] font-mono bg-white/10 backdrop-blur-md text-[#FF6D29] px-2.5 py-0.5 rounded-full border border-[#FF6D29]/40 font-bold">
+              2026 GLOBAL INTAKE
             </span>
-            <span className="text-[10px] font-mono text-[#065F46] font-medium">LIMITED SEATS</span>
+            <span className="text-[10px] font-mono text-white/80">SCHOLARSHIPS AVAILABLE</span>
           </div>
 
           <div className="space-y-1">
-            <h4 className="text-lg md:text-xl font-extrabold text-[#0F172A] font-['Manrope']">
-              Launch Your Career in 120 Days
+            <h4 className="text-lg md:text-xl font-extrabold text-white font-['Manrope']">
+              Study in Europe & UK with Visa Support
             </h4>
-            <p className="text-xs text-[#475569]">
-              Live Weekend Sessions · Real Industry Projects · 1-on-1 Mentorship
+            <p className="text-xs text-[#BABABA]">
+              Free 1-on-1 Profile Evaluation · Top 1% Ranked Universities
             </p>
           </div>
 
-          <div className="flex items-center justify-between pt-2 border-t border-[#CBD5E1] text-[10px] text-[#475569] font-mono">
+          <div className="flex items-center justify-between pt-2 border-t border-white/10 text-[10px] text-[#BABABA] font-mono">
             <span>QUALIFIED APPLICANTS ONLY</span>
-            <span className="text-[#047857] font-bold">APPLY NOW</span>
+            <span className="text-[#FF6D29] font-bold">APPLY NOW</span>
           </div>
         </div>
 
         {/* Ad CTA Bar */}
-        <div className="p-2.5 rounded-lg bg-[#F8FAFC] border border-[#E2E8F0] flex items-center justify-between">
+        <div className="p-2.5 rounded-xl bg-white/[0.04] border border-white/10 flex items-center justify-between">
           <div>
-            <p className="text-[10px] text-[#64748B] uppercase font-mono">vidyaportal.in</p>
-            <p className="text-xs font-bold text-[#0F172A]">Check Eligibility & Syllabus</p>
+            <p className="text-[10px] text-[#BABABA] uppercase font-mono">vidyaportal.in/study-abroad</p>
+            <p className="text-xs font-bold text-white">Check University Eligibility</p>
           </div>
-          <span className="px-3 py-1 bg-[#047857] text-white text-xs font-bold rounded shadow-2xs">
-            Sign Up
+          <span className="px-3 py-1 bg-[#FF6D29] text-white text-xs font-bold rounded-full shadow-[0_2px_10px_rgba(255,109,41,0.4)]">
+            Apply Now
           </span>
         </div>
 
         {/* Ad Metrics Footer */}
-        <div className="flex items-center justify-between pt-2 text-[11px] text-[#64748B] font-mono border-t border-[#E2E8F0]">
+        <div className="flex items-center justify-between pt-2 text-[11px] text-[#BABABA] font-mono border-t border-white/10">
           <span>CTR: 2.8%</span>
-          <span>Lead Form Completion: 18.4%</span>
-          <span className="text-[#047857] font-semibold">CPL: -32% vs Target</span>
+          <span>Form Completion: 18.4%</span>
+          <span className="text-[#FF6D29] font-semibold">CPL: -32% vs Target</span>
         </div>
       </div>
     );
@@ -80,46 +80,46 @@ export const CampaignVisualAsset: React.FC<CampaignVisualAssetProps> = ({ caseSt
 
   if (caseStudyId === 'cs-gazania') {
     return (
-      <div className="rounded-xl overflow-hidden bg-white border border-[#E2E8F0] p-5 space-y-4 shadow-xs">
-        <div className="flex items-center justify-between pb-3 border-b border-[#E2E8F0] text-xs font-mono">
-          <span className="text-[#047857] font-bold">INSTAGRAM REELS STORYTELLING</span>
-          <span className="text-[#64748B]">RADIUS: 7KM TIME-PARTED</span>
+      <div className="rounded-2xl overflow-hidden glass-card p-5 space-y-4 border-white/15">
+        <div className="flex items-center justify-between pb-3 border-b border-white/10 text-xs font-mono">
+          <span className="text-[#FF6D29] font-bold">INDO-ARAB RESTAURANT REELS</span>
+          <span className="text-[#BABABA]">RADIUS: 7KM TIME-PARTED</span>
         </div>
 
         {/* Reel Preview Card */}
-        <div className="relative aspect-[9/10] rounded-lg overflow-hidden bg-gradient-to-t from-[#F8FAFC] via-[#F1F5F9] to-[#E2E8F0] border border-[#CBD5E1] p-5 flex flex-col justify-between">
-          <div className="flex justify-between items-center text-xs font-mono text-[#64748B]">
-            <span className="bg-white px-2 py-0.5 rounded text-[#047857] font-bold shadow-2xs border border-[#E2E8F0]">
+        <div className="relative aspect-[9/10] rounded-xl overflow-hidden bg-gradient-to-t from-[#0F0C0F] via-[#35231C] to-[#1F171A] border border-white/20 p-5 flex flex-col justify-between shadow-[inset_0_1px_2px_rgba(255,255,255,0.3)]">
+          <div className="flex justify-between items-center text-xs font-mono text-[#BABABA]">
+            <span className="bg-black/60 backdrop-blur-md px-2.5 py-0.5 rounded-full text-[#FF6D29] font-bold border border-[#FF6D29]/30">
               THU-SAT 4PM-8:30PM
             </span>
-            <span className="font-semibold text-[#0F172A]">GAZANIA BISTRO</span>
+            <span className="font-semibold text-white">GAZANIA INDO-ARAB</span>
           </div>
 
           <div className="space-y-2 my-auto text-center py-6">
-            <span className="text-3xl">🔥🥩🍽️</span>
-            <h4 className="text-xl font-bold text-[#0F172A] font-['Manrope']">
-              "The Sound of Weekend Evenings"
+            <span className="text-3xl">🔥🍖🍚</span>
+            <h4 className="text-xl font-bold text-white font-['Manrope']">
+              "Authentic Mandi & Charcoal Sizzles"
             </h4>
-            <p className="text-xs text-[#475569] max-w-xs mx-auto">
-              Sensory acoustic sizzles, artisanal spices, and ambient mood dining in Malappuram.
+            <p className="text-xs text-[#BABABA] max-w-xs mx-auto">
+              Slow-cooked aromatic rice, tender charcoal grills, and rich Arabian spices in Malappuram.
             </p>
           </div>
 
-          <div className="p-3 rounded-lg bg-white border border-[#CBD5E1] shadow-xs flex items-center justify-between">
+          <div className="p-3 rounded-xl bg-black/60 backdrop-blur-md border border-white/15 shadow-md flex items-center justify-between">
             <div className="text-left">
-              <p className="text-[10px] text-[#64748B] font-mono">Reserve for Tonight</p>
-              <p className="text-xs font-bold text-[#0F172A]">Book a Table via Instagram DM</p>
+              <p className="text-[10px] text-[#BABABA] font-mono">Reserve Weekend Table</p>
+              <p className="text-xs font-bold text-white">Book via Instagram DM / WhatsApp</p>
             </div>
-            <span className="px-2.5 py-1 text-xs font-bold bg-[#047857] text-white rounded">
-              Send Message
+            <span className="px-3 py-1 text-xs font-bold bg-[#FF6D29] text-white rounded-full shadow-[0_2px_10px_rgba(255,109,41,0.4)]">
+              Send DM
             </span>
           </div>
         </div>
 
-        <div className="flex items-center justify-between pt-2 text-[11px] text-[#64748B] font-mono">
+        <div className="flex items-center justify-between pt-2 text-[11px] text-[#BABABA] font-mono">
           <span>Local Impressions: 35,000+</span>
           <span>CPM: ₹42</span>
-          <span className="text-[#047857] font-semibold">DM Inquiries: 3.8x Lift</span>
+          <span className="text-[#FF6D29] font-semibold">DM Inquiries: 3.8x Lift</span>
         </div>
       </div>
     );
@@ -127,38 +127,38 @@ export const CampaignVisualAsset: React.FC<CampaignVisualAssetProps> = ({ caseSt
 
   if (caseStudyId === 'cs-cellupro') {
     return (
-      <div className="rounded-xl overflow-hidden bg-white border border-[#E2E8F0] p-5 space-y-4 shadow-xs">
-        <div className="flex items-center justify-between pb-3 border-b border-[#E2E8F0] text-xs font-mono">
-          <span className="text-[#047857] font-bold">GOOGLE SEARCH B2B HARVESTING</span>
-          <span className="text-[#64748B]">HIGH-INTENT COMMERCIAL</span>
+      <div className="rounded-2xl overflow-hidden glass-card p-5 space-y-4 border-white/15">
+        <div className="flex items-center justify-between pb-3 border-b border-white/10 text-xs font-mono">
+          <span className="text-[#FF6D29] font-bold">GOOGLE SEARCH & E-COMMERCE ACQUISITION</span>
+          <span className="text-[#BABABA]">SKINCARE & SUSTAINABLE</span>
         </div>
 
         {/* Google Search Mockup */}
-        <div className="p-4 rounded-lg bg-[#F8FAFC] border border-[#E2E8F0] space-y-2">
-          <div className="flex items-center gap-2 text-xs text-[#64748B] font-mono">
-            <Search className="w-3.5 h-3.5 text-[#047857]" />
-            <span>Keyword: "biodegradable food containers wholesale kerala"</span>
+        <div className="p-4 rounded-xl bg-white/[0.04] border border-white/10 space-y-2">
+          <div className="flex items-center gap-2 text-xs text-[#BABABA] font-mono">
+            <Search className="w-3.5 h-3.5 text-[#FF6D29]" />
+            <span>Keyword: "sustainable clean barrier repair serum"</span>
           </div>
-          <div className="pt-2 border-t border-[#E2E8F0]">
-            <p className="text-[10px] text-[#047857] uppercase font-mono font-semibold">Sponsored · www.celluprogreen.com</p>
-            <h4 className="text-sm font-bold text-[#1D4ED8] hover:underline cursor-pointer">
-              Cellupro™ Bagasse Food Packaging | Request Free Commercial Sample Kit
+          <div className="pt-2 border-t border-white/10">
+            <p className="text-[10px] text-[#FF6D29] uppercase font-mono font-semibold">Sponsored · www.cellupro.com/skincare</p>
+            <h4 className="text-sm font-bold text-[#FF6D29] hover:underline cursor-pointer">
+              Cellupro™ Clean Barrier Serum | 100% Sustainable Botanical Actives
             </h4>
-            <p className="text-xs text-[#475569] leading-relaxed pt-1">
-              100% compostable sugarcane bagasse containers for restaurants & cloud kitchens. Microwave safe, oil resistant, certified food-grade. Fast bulk dispatch across South India.
+            <p className="text-xs text-[#BABABA] leading-relaxed pt-1">
+              Clinically formulated for sensitive skin. Eco-refillable glass bottles, cruelty-free, zero harsh chemicals. Experience 72hr locked hydration with botanical ceramides.
             </p>
-            <div className="flex gap-4 pt-2 text-[11px] text-[#047857] font-mono font-medium">
-              <span className="underline decoration-[#047857]">Download Wholesale Catalog</span>
+            <div className="flex gap-4 pt-2 text-[11px] text-white font-mono font-medium">
+              <span className="underline decoration-[#FF6D29]">Shop Daily Routine Bundles</span>
               <span>·</span>
-              <span className="underline decoration-[#047857]">Calculate Price Per Unit</span>
+              <span className="underline decoration-[#FF6D29]">Read Dermatologist Reviews</span>
             </div>
           </div>
         </div>
 
-        <div className="flex items-center justify-between pt-2 text-[11px] text-[#64748B] font-mono">
+        <div className="flex items-center justify-between pt-2 text-[11px] text-[#BABABA] font-mono">
           <span>Search Imp Share: 74%</span>
-          <span>Sample CPA: ₹140</span>
-          <span className="text-[#047857] font-semibold">Commercial Samples: 45+/Qtr</span>
+          <span>Sample CAC: ₹220</span>
+          <span className="text-[#FF6D29] font-semibold">Blended ROAS: 3.4x</span>
         </div>
       </div>
     );
@@ -166,36 +166,36 @@ export const CampaignVisualAsset: React.FC<CampaignVisualAssetProps> = ({ caseSt
 
   // Default Placementor Mockup
   return (
-    <div className="rounded-xl overflow-hidden bg-white border border-[#E2E8F0] p-5 space-y-4 shadow-xs">
-      <div className="flex items-center justify-between pb-3 border-b border-[#E2E8F0] text-xs font-mono">
-        <span className="text-[#047857] font-bold">ADMISSIONS WORKSHOP FUNNEL</span>
-        <span className="text-[#64748B]">PLACEMENTOR ACADEMY</span>
+    <div className="rounded-2xl overflow-hidden glass-card p-5 space-y-4 border-white/15">
+      <div className="flex items-center justify-between pb-3 border-b border-white/10 text-xs font-mono">
+        <span className="text-[#FF6D29] font-bold">CAREER TRAINING ADMISSIONS FUNNEL</span>
+        <span className="text-[#BABABA]">PLACEMENTOR ACADEMY</span>
       </div>
 
-      <div className="p-4 rounded-lg bg-[#F8FAFC] border border-[#E2E8F0] space-y-3">
+      <div className="p-4 rounded-xl bg-white/[0.04] border border-white/10 space-y-3">
         <div className="flex items-center justify-between">
-          <span className="text-xs font-bold text-[#0F172A]">Free 90-Min Career Masterclass</span>
-          <span className="text-[10px] font-mono text-[#047857] font-bold">THIS SATURDAY</span>
+          <span className="text-xs font-bold text-white">Free 90-Min Professional Masterclass</span>
+          <span className="text-[10px] font-mono text-[#FF6D29] font-bold bg-[#FF6D29]/15 px-2 py-0.5 rounded-full border border-[#FF6D29]/30">THIS SATURDAY</span>
         </div>
-        <p className="text-xs text-[#475569]">
-          Master Accounting, GST & Digital Systems with Certified Industry Professionals. Free live demo + placement pathway consultation.
+        <p className="text-xs text-[#BABABA]">
+          Job-oriented Accounting, GST, IT & Digital Marketing Training with Guaranteed Placement Support. Demo class + 1-on-1 career mapping.
         </p>
         <div className="grid grid-cols-2 gap-2 text-xs font-mono pt-1">
-          <div className="p-2 rounded bg-white border border-[#E2E8F0]">
-            <p className="text-[10px] text-[#64748B]">Campus Location</p>
-            <p className="font-semibold text-[#0F172A]">Malappuram Branch</p>
+          <div className="p-2.5 rounded-lg bg-black/40 border border-white/10">
+            <p className="text-[10px] text-[#BABABA]">Campus Location</p>
+            <p className="font-semibold text-white">Malappuram Branch</p>
           </div>
-          <div className="p-2 rounded bg-white border border-[#E2E8F0]">
-            <p className="text-[10px] text-[#64748B]">Placement Track</p>
-            <p className="font-semibold text-[#047857]">Verified Alumni Network</p>
+          <div className="p-2.5 rounded-lg bg-black/40 border border-white/10">
+            <p className="text-[10px] text-[#BABABA]">Placement Track</p>
+            <p className="font-semibold text-[#FF6D29]">Verified Corporate Alumni</p>
           </div>
         </div>
       </div>
 
-      <div className="flex items-center justify-between pt-2 text-[11px] text-[#64748B] font-mono">
+      <div className="flex items-center justify-between pt-2 text-[11px] text-[#BABABA] font-mono">
         <span>Batch Fill: 100%+</span>
         <span>Demo Attendees: 500+</span>
-        <span className="text-[#047857] font-semibold">ROI Improvement: +30%</span>
+        <span className="text-[#FF6D29] font-semibold">ROI Improvement: +30%</span>
       </div>
     </div>
   );
